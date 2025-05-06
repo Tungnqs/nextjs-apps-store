@@ -153,6 +153,22 @@ export function ShieldIcon(props: React.HTMLAttributes<SVGElement>) {
   );
 }
 
+export function UpArrowIcon(props: React.HTMLAttributes<SVGElement>) {
+  return (
+    <svg
+      width="16"
+      height="10"
+      viewBox="0 0 16 10"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className=""
+      {...props}
+    >
+      <path d="M8 0.733268L0 9.2666H16L8 0.733268Z" fill="white" />
+    </svg>
+  );
+}
+
 export function GlobeIcon(props: React.HTMLAttributes<SVGElement>) {
   return (
     <svg

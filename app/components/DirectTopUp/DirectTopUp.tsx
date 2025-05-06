@@ -49,7 +49,7 @@ interface IDirectTopUpItemCardProps {
 
 const DirectTopUpItemCard = ({ imgSrc, title }: IDirectTopUpItemCardProps) => {
   return (
-    <div className="pb-[21px] px-4 flex flex-col gap-2 rounded-2xl w-[24%] bg-dark-red border border-alternative-gray">
+    <div className="pb-[21px] px-4 flex flex-col gap-2 rounded-2xl w-[24%] bg-dark-red-1 border border-alternative-gray">
       <img className="aspect-square" src={imgSrc} alt="top up icon" />
       <div className="text-center font-bold">{title}</div>
       <div className="flex justify-between items-center bg-red-gray px-3 py-[10px] font-bold">

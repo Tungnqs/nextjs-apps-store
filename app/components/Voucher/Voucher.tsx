@@ -65,7 +65,7 @@ const VoucherItemCard = ({
   title,
 }: IVoucherItemCardProps) => {
   return (
-    <div className="px-[21px] py-4 flex flex-col gap-2 rounded-2xl w-[32%] bg-dark-red border border-alternative-gray">
+    <div className="px-[21px] py-4 flex flex-col gap-2 rounded-2xl w-[32%] bg-dark-red-1 border border-alternative-gray">
       <img src={imgSrc} alt="voucher image" />
       <div className="text-xl font-bold">{title}</div>
       <div className="text-xl font-light">{description}</div>
