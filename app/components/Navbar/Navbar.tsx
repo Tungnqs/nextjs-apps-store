@@ -29,7 +29,7 @@ const Navbar = () => {
           />
           <SearchIcon className="absolute right-2 top-[calc(50%_-_10px)]" />
         </div>
-        <button className="bg-primary-orange px-3 py-[10px] rounded-lg cursor-pointer">Log in</button>
+        <button className="bg-primary-orange px-3 py-[10px] rounded-lg cursor-pointer button-hover transition">Log in</button>
         <USAIcon />
       </div>
     </header>

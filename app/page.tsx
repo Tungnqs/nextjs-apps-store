@@ -1,5 +1,7 @@
+import DirectTopUp from "./components/DirectTopUp/DirectTopUp";
 import Navbar from "./components/Navbar/Navbar";
 import Overview from "./components/Overview/Overview";
+import Voucher from "./components/Voucher/Voucher";
 
 export default function Home() {
   return (
@@ -16,7 +18,8 @@ export default function Home() {
           }}
         >
           <Overview />
-          <div></div>
+          <Voucher />
+          <DirectTopUp />
         </div>
       </main>
       {/* <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">

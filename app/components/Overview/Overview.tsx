@@ -5,14 +5,7 @@ const Overview = () => {
   return (
     <div className="px-[64px] py-[124px] flex flex-col justify-center gap-7 min-h-[608px] text-light-gray relative">
       <div className="text-[64px] font-bold">Welcome to Apps Store</div>
-      <div
-        style={{
-          border: "1px solid",
-          borderImageSource:
-            "linear-gradient(155.5deg, #C9C9C9 -0.69%, #000000 47.92%, #C9C9C9 100.69%)",
-        }}
-        className="p-8 flex flex-col gap-3 bg-dark-red rounded-[36px]"
-      >
+      <div className="p-8 flex flex-col gap-3 bg-dark-red rounded-[36px] border border-alternative-gray">
         <img
           src="/images/spell.png"
           alt="Logo"
@@ -26,7 +19,7 @@ const Overview = () => {
           <LabelWithIcon title="Official Store" />
           <LabelWithIcon title="Secure Payments" />
         </div>
-        <button className="bg-primary-orange rounded-lg h-[44px] w-[269px] font-semibold text-white cursor-pointer">
+        <button className="bg-primary-orange rounded-lg h-[44px] w-[269px] font-semibold text-white cursor-pointer transition button-hover">
           VIEW OFFERS
         </button>
       </div>
