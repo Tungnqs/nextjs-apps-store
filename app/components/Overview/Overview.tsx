@@ -19,7 +19,7 @@ const Overview = () => {
           <LabelWithIcon title="Official Store" />
           <LabelWithIcon title="Secure Payments" />
         </div>
-        <button className="bg-primary-orange rounded-lg h-[44px] w-[269px] font-semibold text-white cursor-pointer transition button-hover">
+        <button className="bg-primary-orange hover:bg-primary-orange-hover rounded-lg h-[44px] w-[269px] font-semibold text-white cursor-pointer transition button-hover">
           VIEW OFFERS
         </button>
       </div>

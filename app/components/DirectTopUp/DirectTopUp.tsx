@@ -60,10 +60,10 @@ const DirectTopUpItemCard = ({ imgSrc, title }: IDirectTopUpItemCardProps) => {
         <div>20</div>
       </div>
       <div className="flex gap-2 font-semibold">
-        <button className="flex-1 h-11 flex justify-center items-center bg-primary-orange cursor-pointer">
+        <button className="flex-1 h-11 flex justify-center items-center bg-primary-orange hover:bg-primary-orange-hover cursor-pointer">
           $9.99
         </button>
-        <button className="size-11 flex justify-center items-center bg-primary-orange cursor-pointer">
+        <button className="size-11 flex justify-center items-center bg-primary-orange hover:bg-primary-orange-hover cursor-pointer">
           <GlobeIcon />
         </button>
       </div>

@@ -69,7 +69,7 @@ const VoucherItemCard = ({
       <img src={imgSrc} alt="voucher image" />
       <div className="text-xl font-bold">{title}</div>
       <div className="text-xl font-light">{description}</div>
-      <button className="px-4 py-[10px] flex gap-[10px] bg-primary-orange border border-alternative-gray items-center justify-center font-bold cursor-pointer">
+      <button className="px-4 py-[10px] flex gap-[10px] bg-primary-orange hover:bg-primary-orange-hover border border-alternative-gray items-center justify-center font-bold cursor-pointer">
         <div className="line-through text-medium-gray">{actualPrice}</div>
         <div>{discountedPrice}</div>
       </button>

@@ -1,6 +1,8 @@
 import DirectTopUp from "./components/DirectTopUp/DirectTopUp";
+import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import Overview from "./components/Overview/Overview";
+import PromotionCode from "./components/PromotionCode/PromotionCode";
 import Support from "./components/Support/Support";
 import Voucher from "./components/Voucher/Voucher";
 
@@ -22,8 +24,10 @@ export default function Home() {
           <Voucher />
           <DirectTopUp />
           <Support />
+          <PromotionCode />
         </div>
       </main>
+      <Footer />
       {/* <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
