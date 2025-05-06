@@ -25,7 +25,7 @@ const Support = () => {
     },
   ];
   return (
-    <div className="pb-[124px] px-[64px] flex flex-col gap-3">
+    <div id="support" className="pb-[124px] px-[64px] flex flex-col gap-3">
       {questionList.map((item, index) => (
         <QuestionItem
           key={index}

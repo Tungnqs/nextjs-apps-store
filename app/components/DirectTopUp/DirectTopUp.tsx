@@ -22,7 +22,7 @@ const DirectTopUp = () => {
     },
   ];
   return (
-    <div className="pb-[124px] flex flex-col gap-9">
+    <div id="direct-top-up" className="pb-[124px] flex flex-col gap-9">
       <div className="h-[64px] text-[48px] flex justify-center items-center font-bold">
         Direct Top-up
       </div>

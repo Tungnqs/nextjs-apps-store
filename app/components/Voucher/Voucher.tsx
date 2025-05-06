@@ -26,7 +26,7 @@ const Voucher = () => {
     },
   ];
   return (
-    <div className="pb-[124px] flex flex-col gap-9">
+    <div id="voucher" className="pb-[124px] flex flex-col gap-9">
       <div className="h-[64px] text-[48px] flex justify-center items-center font-bold">
         Voucher
       </div>

@@ -1,5 +1,5 @@
 import {
-    SearchIcon,
+  SearchIcon,
   SupportIcon,
   TopUpIcon,
   USAIcon,
@@ -8,16 +8,33 @@ import {
 import React from "react";
 const Navbar = () => {
   const buttons: IButtonItemProps[] = [
-    { icon: <TopUpIcon className="size-5" />, title: "Direct Top up" },
-    { icon: <VoucherIcon className="size-5" />, title: "Direct Top up" },
-    { icon: <SupportIcon className="size-5" />, title: "Direct Top up" },
+    {
+      icon: <TopUpIcon className="size-5" />,
+      title: "Direct Top up",
+      sectionId: "#direct-top-up",
+    },
+    {
+      icon: <VoucherIcon className="size-5" />,
+      title: "Voucher",
+      sectionId: "#voucher",
+    },
+    {
+      icon: <SupportIcon className="size-5" />,
+      title: "Support",
+      sectionId: "#support",
+    },
   ];
   return (
     <header className="bg-black flex justify-between px-[64px] py-6">
       <div className="flex gap-6 items-center">
         <img src="/images/app-logo.png" alt="Logo" className="h-11" />
         {buttons.map((item, index) => (
-          <ButtonItem key={index} icon={item.icon} title={item.title} />
+          <ButtonItem
+            key={index}
+            icon={item.icon}
+            title={item.title}
+            sectionId={item.sectionId}
+          />
         ))}
       </div>
       <div className="flex gap-2 items-center">
@@ -29,7 +46,9 @@ const Navbar = () => {
           />
           <SearchIcon className="absolute right-2 top-[calc(50%_-_10px)]" />
         </div>
-        <button className="bg-primary-orange hover:bg-primary-orange-hover font-semibold px-3 py-[10px] rounded-lg cursor-pointer">Log in</button>
+        <button className="bg-primary-orange hover:bg-primary-orange-hover font-semibold px-3 py-[10px] rounded-lg cursor-pointer">
+          Log in
+        </button>
         <USAIcon />
       </div>
     </header>
@@ -39,13 +58,14 @@ const Navbar = () => {
 interface IButtonItemProps {
   icon: React.ReactNode;
   title: string;
+  sectionId: string;
 }
-const ButtonItem = ({ icon, title }: IButtonItemProps) => {
+const ButtonItem = ({ icon, title, sectionId }: IButtonItemProps) => {
   return (
-    <div className="flex items-center gap-2 cursor-pointer">
+    <a href={sectionId} className="flex items-center gap-2 cursor-pointer hover:underline">
       {icon}
       <div className="font-semibold">{title}</div>
-    </div>
+    </a>
   );
 };
 
