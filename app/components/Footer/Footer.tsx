@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-black">
-      <div className="flex justify-between px-[60px] pt-10 pb-5">
+      <div className="flex justify-between px-[60px] max-lg:px-[30px] max-md:flex-col max-md:gap-8 pt-10 pb-5">
         <div className="flex flex-col gap-2 flex-1">
           <h1 className="text-2xl font-bold uppercase">Order</h1>
           <a className="text-xl hover:underline w-fit" href="#">
@@ -47,7 +47,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="flex flex-col gap-6">
-          <button className="px-3 py-[10px] font-semibold bg-primary-orange hover:bg-primary-orange-hover cursor-pointer">
+          <button className="px-3 py-[10px] font-semibold bg-primary-orange hover:bg-primary-orange-hover cursor-pointer max-md:w-fit">
             Contact Us
           </button>
           <div className="flex flex-col gap-2">
@@ -72,11 +72,11 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="px-[34px] h-[100px] flex items-center justify-between">
+      <div className="px-[34px] h-[100px] flex items-center justify-between max-md:justify-center">
         <img
           src="/images/app-logo.png"
           alt="Logo"
-          className="h-[78px] w-auto"
+          className="h-[78px] w-auto max-md:hidden"
         />
         <div className="flex items-center gap-1 text-[#616161]">
           <a className="text-base hover:underline w-fit" href="#">

@@ -169,6 +169,55 @@ export function UpArrowIcon(props: React.HTMLAttributes<SVGElement>) {
   );
 }
 
+export function MenuIcon(props: React.HTMLAttributes<SVGElement>) {
+  return (
+    <svg
+      viewBox="0 0 16 16"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="currentColor"
+      className=""
+      {...props}
+    >
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        {" "}
+        <g fill="currentColor">
+          {" "}
+          <path d="m 1 2 h 14 v 2 h -14 z m 0 0"></path>{" "}
+          <path d="m 1 7 h 14 v 2 h -14 z m 0 0"></path>{" "}
+          <path d="m 1 12 h 14 v 2 h -14 z m 0 0"></path>{" "}
+        </g>{" "}
+      </g>
+    </svg>
+  );
+}
+
+export function CloseIcon(props: React.HTMLAttributes<SVGElement>) {
+  return (
+    <svg
+      className="w-3 h-3"
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 14 14"
+      {...props}
+    >
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+      />
+    </svg>
+  );
+}
+
 export function GlobeIcon(props: React.HTMLAttributes<SVGElement>) {
   return (
     <svg

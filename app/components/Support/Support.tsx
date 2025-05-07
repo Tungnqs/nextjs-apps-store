@@ -25,14 +25,25 @@ const Support = () => {
     },
   ];
   return (
-    <div id="support" className="pb-[124px] px-[64px] flex flex-col gap-3">
-      {questionList.map((item, index) => (
-        <QuestionItem
-          key={index}
-          question={item.question}
-          answer={item.answer}
-        />
-      ))}
+    <div
+      style={{
+        backgroundImage: `url("/images/green.png")`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+      id="support"
+      className="pb-[124px] px-[64px] max-lg:px-[40px] flex justify-center"
+    >
+      <div className="max-w-1280 flex flex-col gap-3 w-full">
+        {questionList.map((item, index) => (
+          <QuestionItem
+            key={index}
+            question={item.question}
+            answer={item.answer}
+          />
+        ))}
+      </div>
     </div>
   );
 };

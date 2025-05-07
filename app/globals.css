@@ -20,6 +20,7 @@
   --color-linear-orange: linear-gradient(90deg, #C71A04 0%, #FF1E02 29.81%, #C71A04 63.46%, #FF1E02 100%);
   --color-alternative-gray: #666666;
   --color-red-gray: #482929;
+  --spacing-1280: 1280px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -31,6 +32,9 @@
 
 body {
   font-family: "Poppins", sans-serif;
+}
+
+html {
   scroll-behavior: smooth;
 }
 
@@ -51,4 +55,12 @@ body {
 
 .background-linear-blue{
   background: linear-gradient(90deg, #422B98 0%, #6E48FE 100%);
+}
+
+.truncate-2-lines{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
